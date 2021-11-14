@@ -6,14 +6,22 @@
 //
 
 import UIKit
+import LogStore
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        printLog("viewDidLog")
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let logViewController = LogViewController()
+        present(logViewController, animated: true)
+    }
 
 }
 
