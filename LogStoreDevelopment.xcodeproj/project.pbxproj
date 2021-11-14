@@ -13,6 +13,7 @@
 		DADBCE7A2740AF8100E5CD51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADBCE782740AF8100E5CD51 /* Main.storyboard */; };
 		DADBCE7C2740AF8300E5CD51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DADBCE7B2740AF8300E5CD51 /* Assets.xcassets */; };
 		DADBCE7F2740AF8300E5CD51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADBCE7D2740AF8300E5CD51 /* LaunchScreen.storyboard */; };
+		DADBCE892740B06900E5CD51 /* LogStore in Frameworks */ = {isa = PBXBuildFile; productRef = DADBCE882740B06900E5CD51 /* LogStore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DADBCE7B2740AF8300E5CD51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DADBCE7E2740AF8300E5CD51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DADBCE802740AF8300E5CD51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DADBCE862740AFC400E5CD51 /* LogStore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LogStore; path = ../LogStore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DADBCE892740B06900E5CD51 /* LogStore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +43,10 @@
 		DADBCE662740AF8100E5CD51 = {
 			isa = PBXGroup;
 			children = (
+				DADBCE862740AFC400E5CD51 /* LogStore */,
 				DADBCE712740AF8100E5CD51 /* LogStoreDevelopment */,
 				DADBCE702740AF8100E5CD51 /* Products */,
+				DADBCE872740B06900E5CD51 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +72,13 @@
 			path = LogStoreDevelopment;
 			sourceTree = "<group>";
 		};
+		DADBCE872740B06900E5CD51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +95,9 @@
 			dependencies = (
 			);
 			name = LogStoreDevelopment;
+			packageProductDependencies = (
+				DADBCE882740B06900E5CD51 /* LogStore */,
+			);
 			productName = LogStoreDevelopment;
 			productReference = DADBCE6F2740AF8100E5CD51 /* LogStoreDevelopment.app */;
 			productType = "com.apple.product-type.application";
@@ -360,6 +375,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DADBCE882740B06900E5CD51 /* LogStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LogStore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DADBCE672740AF8100E5CD51 /* Project object */;
 }
